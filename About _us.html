@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#ff0000"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e4b915ed79.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About Us | Ramanujan Academy</title>
+    <link rel="stylesheet" href="./css/About_us/About_us.css" />
+    <link rel="stylesheet" href="./css/common/common.css">
+    <script>
+      //if browser support service worker
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      };
+    </script>
+</head>
+
+<body>
+    <!-- goTop-btn -->
+    <div onclick="goTop();" class="goUp-btn-c">
+      <button>Go Top</button>
+    </div>
+    <link rel="stylesheet" href="./css/stickyTag/stickyTag.css">
+</head>
+
+<body>
+    <section class="stickyTags">
+        <div class="sticky-container">
+          <ul class="sticky">
+            <li>
+              <i class="fab fa-facebook fa-2x"></i>
+              <p>
+                <a href="https://www.facebook.com/codexworld" target="_blank"
+                  >Like Us <br />on Facebook</a
+                >
+              </p>
+            </li>
+            <li>
+              <i class="fab fa-twitter fa-2x"></i>
+              <p>
+                <a href="https://twitter.com/codexworldblog" target="_blank"
+                  >Follow Us <br />on Twitter</a
+                >
+              </p>
+            </li>
+            <li>
+              <i class="fas fa-envelope-open fa-2x"></i>
+              <p>
+                <a href="https://plus.google.com/codexworld" target="_blank"
+                  >Contact us<br />
+                  on Gmail</a
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+  
+    <h1 style="font-size: 40px; text-align: center; color: #000; margin: 50px;">
+        About Us
+    </h1>
+    <div class="buttons">
+        <a href="#founder" class="buttons-1 bt">Founders Message</a>
+        <a href="#vision" class="buttons-2 bt">Our Vision & Motto</a>
+    </div>
+    <section class="section1">
+        <div class="container">
+            <h1 id="founder" class="title">Founders Message</h1>
+            <div class="content-wrapper">
+                <div class="text-wrapper">
+                    <p class="text">
+                        Srinivasa Ramanujan was a great Indian mathematician and autodidact who with almost no formal training in pure mathematics, made extraordinary contributions to mathematical analysis, number theory, infinite series and continued fractions. He was born in 22nd December, 1887 in Tamilnadu and died in 26th April 1920 at the age of 33 only. As a mark of respect to this great son of India, Ramanujan Academy is started after his name to establish a new revolution of science education in this part of the state
+                       Considering the long felt need of a Science Academy imparting quality education along with the purpose of inculcating the basic human values among the young generation Ramanujan Academy is established.
+                      We believe Careful grooming and utmost guidance to the students by esteemed and qualified teachers will always help the students to stand at par in competitions in various fields like Olympiad , all competitive exams, Medical and Engineering entrance exams, etc. We, the family of Ramanujan Academy is committed to establish this institution as one of the renowned and trusted name in the field of quality education.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 100px;" class="section1">
+        <div class="container">
+            <h1 id="vision" class="title">Our Vision & Motto</h1>
+            <div class="content-wrapper">
+                <div class="text-wrapper">
+                    <p class="text">
+                        Srinivasa Ramanujan was a great Indian mathematician and autodidact who with almost no formal training in pure mathematics, made extraordinary contributions to mathematical analysis, number theory, infinite series and continued fractions. He was born in 22nd December, 1887 in Tamilnadu and died in 26th April 1920 at the age of 33 only. As a mark of respect to this great son of India, Ramanujan Academy is started after his name to establish a new revolution of science education in this part of the state.
+                        Considering the long felt need of a Science Academy imparting quality education along with the purpose of inculcating the basic human values among the young generation Ramanujan Academy is established.                      
+                        We believe Careful grooming and utmost guidance to the students by esteemed and qualified teachers will always help the students to stand at par in competitions in various fields like Olympiad , all competitive exams, Medical and Engineering entrance exams, etc. We, the family of Ramanujan Academy is committed to establish this institution as one of the renowned and trusted name in the field of quality education.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map_class">
+
+        <div id="map" style="height: 500px; width: 100%; margin-top: 1rem;"></div>
+        <script>
+            function initMap() {
+
+              const uluru = { lat: 26.353674, lng:91.729858 };
+
+              const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+              });
+              const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+              });
+            }
+          </script>
+          <!--The div element for the map -->
+      
+          <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0VOFWiOT1nGyONyS6WV5mbwQMuh6yKws&callback=initMap&libraries=&v=weekly"
+            async
+          ></script>
+        </section>
+
+
+</body>
+<script src="./js/common/common.js"></script>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#ff0000"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e4b915ed79.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/stickyTag/stickyTag.css" />
+    <link rel="stylesheet" href="./css/Teacher/teacher.css" />
+    <link rel="stylesheet" href="./css/homepage/Navbar.css" />
+    <link rel="stylesheet" href="./css/Footer/Footer_other.css" />
+    <link rel="stylesheet" href="./css/common/common.css" />
+    <title>Teacher</title>
+    <script>
+      //if browser support service worker
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      };
+    </script>
+  </head>
+  <body>
+    <!-- goTop-btn -->
+    <div onclick="goTop();" class="goUp-btn-c">
+      <button>Go Top</button>
+    </div>
+    <section class="stickyTags">
+      <div class="sticky-container">
+        <ul class="sticky">
+          <li>
+            <i class="fab fa-facebook fa-2x"></i>
+            <p>
+              <a href="https://www.facebook.com/codexworld" target="_blank"
+                >Like Us <br />on Facebook</a
+              >
+            </p>
+          </li>
+          <li>
+            <i class="fab fa-twitter fa-2x"></i>
+            <p>
+              <a href="https://twitter.com/codexworldblog" target="_blank"
+                >Follow Us <br />on Twitter</a
+              >
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-envelope-open fa-2x"></i>
+            <p>
+              <a href="https://plus.google.com/codexworld" target="_blank"
+                >Contact us<br />
+                on Gmail</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="prefi">
+      <nav style="background-color: #082142">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="hide_logo">
+          <img src="image/image 1.png" height="64px" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="./achievement.html">Achievement</a>
+            <div class="nav-border-bottom"></div>
+          </li>
+          <li>
+            <a href="./admission.html">Admission</a>
+            <div class="nav-border-bottom"></div>
+          </li>
+          <li class="dropdown-c">
+            <span class="dropdown-text">Administration</span>
+            <div class="nav-border-bottom"></div>
+            <div class="dropdown">
+              <div class="option"><a href="#administration">head</a></div>
+              <div class="option">
+                <a href="./scienceDepartment.html">Science</a>
+              </div>
+              <div class="option">
+                <a href="./ARTs_department.html">Arts</a>
+              </div>
+              <div class="option"><a href="#">Coaching</a></div>
+            </div>
+          </li>
+          <li>
+            <a href="./index.html"
+              ><img src="image/image 1.png" height="50%"
+            /></a>
+          </li>
+          <li>
+            <a href="./Gallery.html">Gallery</a>
+            <div class="nav-border-bottom"></div>
+          </li>
+          <li>
+            <a href="#second_page">Notice</a>
+            <div class="nav-border-bottom"></div>
+          </li>
+          <li class="dropdown-c">
+            <span class="dropdown-text">More ON RA</span>
+            <div class="nav-border-bottom"></div>
+            <div class="dropdown">
+              <div class="option">
+                <a href="./About _us.html">About Us</a>
+              </div>
+              <div class="option">
+                <a href="#contact_form">Contact Us</a>
+              </div>
+              <div class="option">
+                <a href="./WhyRA.html">Why RA</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="image_background">
+        <img src="image/image1.jpeg" height="100%" width="100%" />
+      </div>
+    </section>
+    <div class="teacher">
+      <section class="facultyDirectory">
+        <h3>Home > Arts > Faculty</h3>
+        <h1>Faculty Directory</h1>
+        <div class="content">
+          Considering the long felt need of a Science Academy imparting quality
+          education along with the purpose of inculcating the basic human values
+          among the young generation Ramanujan Academy is established.
+          <br /><br />
+          We believe Careful grooming and utmost guidance to the students by
+          esteemed and qualified teachers will always help the students to stand
+          at par in competitions in various fields like Olympiad , all
+          competitive exams, Medical and Engineering entrance exams, etc. We,
+          the family of Ramanujan Academy is committed to establish this
+          institution as one of the renowned and trusted name in the field of
+          quality education.
+        </div>
+        <h2>Filter By Area of Expertise</h2>
+        <select name="areas" id="areas">
+          <option value="" disabled selected>Area of Expertise</option>
+          <option value="Arts">Arts</option>
+          <option value="Science">Science</option>
+          <option value="Commerce">Commerce</option>
+          <option value="Sports">Sports</option>
+        </select>
+        <div class="resetBtn">
+          <button>RESET</button>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="grid">
+          <div class="item">
+            <a
+              href="#0"
+              aria-labelledby="person1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+              "
+            ></a>
+            <div class="item__overlay">
+              <h3 id="person1" aria-hidden="true">Dr. Ronuj Pegu</h3>
+              <div class="item__body">
+                <p style="padding-top: 2px">Asst. Prof, Physics</p>
+                <p style="padding-top: 2px">Experience: 10 years</p>
+                <p style="padding-top: 2px">Ph No: +91 7873534962</p>
+                <p style="margin-top: 4rem">
+                  <a
+                    ><i
+                      class="fab fa-instagram fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i
+                      class="fab fa-facebook fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="#0"
+              aria-labelledby="person1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+              "
+            ></a>
+            <div class="item__overlay">
+              <h3 id="person1" aria-hidden="true">Keshab Mahanta</h3>
+              <div class="item__body">
+                <p style="padding-top: 2px">Asst. Prof, Chemistry</p>
+                <p style="padding-top: 2px">Experience: 11 years</p>
+                <p style="padding-top: 2px">Ph No: +91 7873534962</p>
+                <p style="margin-top: 4rem">
+                  <a
+                    ><i
+                      class="fab fa-instagram fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i
+                      class="fab fa-facebook fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="#0"
+              aria-labelledby="person1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+              "
+            ></a>
+            <div class="item__overlay">
+              <h3 id="person1" aria-hidden="true">Keshab Mahanta</h3>
+              <div class="item__body">
+                <p style="padding-top: 2px">Asst. Prof, Chemistry</p>
+                <p style="padding-top: 2px">Experience: 11 years</p>
+                <p style="padding-top: 2px">Ph No: +91 7873534962</p>
+                <p style="margin-top: 4rem">
+                  <a
+                    ><i
+                      class="fab fa-instagram fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i
+                      class="fab fa-facebook fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="#0"
+              aria-labelledby="person1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+              "
+            ></a>
+            <div class="item__overlay">
+              <h3 id="person1" aria-hidden="true">Atul Bora</h3>
+              <div class="item__body">
+                <p style="padding-top: 2px">Asst. Prof, Maths</p>
+                <p style="padding-top: 2px">Experience: 12 years</p>
+                <p style="padding-top: 2px">Ph No: +91 7873534962</p>
+                <p style="margin-top: 4rem">
+                  <a
+                    ><i
+                      class="fab fa-instagram fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i
+                      class="fab fa-facebook fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="#0"
+              aria-labelledby="person1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+              "
+            ></a>
+            <div class="item__overlay">
+              <h3 id="person1" aria-hidden="true">Dr. Himanta Biswa Sarma</h3>
+              <div class="item__body">
+                <p style="padding-top: 2px">Asst. Prof, Politics</p>
+                <p style="padding-top: 2px">Experience: 19 years</p>
+                <p style="padding-top: 2px">Ph No: +91 7873534962</p>
+                <p style="margin-top: 4rem">
+                  <a
+                    ><i
+                      class="fab fa-instagram fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i
+                      class="fab fa-facebook fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="#0"
+              aria-labelledby="person1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+              "
+            ></a>
+            <div class="item__overlay">
+              <h3 id="person1" aria-hidden="true">Akhil Gogoi</h3>
+              <div class="item__body">
+                <p style="padding-top: 2px">Asst. Prof, Prison</p>
+                <p style="padding-top: 2px">Experience: 1 year</p>
+                <p style="padding-top: 2px">Ph No: +91 7873534962</p>
+                <p style="margin-top: 4rem">
+                  <a
+                    ><i
+                      class="fab fa-instagram fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i
+                      class="fab fa-facebook fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="#0"
+              aria-labelledby="person1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+              "
+            ></a>
+
+            <div class="item__overlay">
+              <h3 id="person1" aria-hidden="true">Pijush Hazarika</h3>
+              <div class="item__body">
+                <p style="padding-top: 2px">Asst. Prof, Uporor Maal</p>
+                <p style="padding-top: 2px">Experience: 10 years</p>
+                <p style="padding-top: 2px">Ph No: +91 7873534962</p>
+                <p style="margin-top: 4rem">
+                  <a
+                    ><i
+                      class="fab fa-instagram fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i
+                      class="fab fa-facebook fa-2x"
+                      style="padding-right: 10px"
+                    ></i
+                    ><i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="f-row">
+          <div class="footer-col">
+            <h4>know more about us</h4>
+            <ul>
+              <li><a href="./About _us.html">about us</a></li>
+              <li><a href="contact_form">Contact Us</a></li>
+              <li><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Link</h4>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#second_page">Notices</a></li>
+              <li><a href="./admission.html">get Admision</a></li>
+              <li><a href="./achievement.html">achievement</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Department</h4>
+            <ul>
+              <li><a href="./ARTs_department.html">Arts</a></li>
+              <li><a href="./scienceDepartment.html">science</a></li>
+              <li><a href="#">coaching</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Rights">copyright reserves by UC creators @2021</div>
+    </footer>
+    <script src="js/homepage/Navbar>.js"></script>
+    <script src="./js/common/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+{
+    "short_name": "Ramanujan Academy",
+    "name": "Ramanujan Academy",
+    "icons": [
+      {
+        "src": "./image/android-icon-36x36.png",
+        "type": "image/png",
+        "sizes": "36x36"
+      },
+      {
+        
+        "src": "./image/android-icon-48x48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "./image/android-icon-72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "./image/android-icon-96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "./image/ms-icon-144x144.png",
+        "type": "image/png",
+        "sizes": "144x144",
+        "purpose":"any maskable"
+      },
+      {
+        "src": "./image/android-icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "./image/Logo RA main 1.jpg",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/index.html",
+    "theme_color": "#3367D6",
+    "prefer_related_applications": true,
+"related_applications": [
+  {
+    "platform": "play",
+    "id": "com.google.samples.apps.iosched"
+  }
+]
+}
